@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_text_border"
+    android:backgroundTint="@color/background">
+
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:layout_width="85dp"-->
+<!--        android:layout_height="85dp"-->
+<!--        android:id="@+id/capture"-->
+<!--        app:civ_border_width="2dp"-->
+<!--        app:civ_border_color="@android:color/darker_gray"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:src="@drawable/folder">-->
+
+<!--    </de.hdodenhof.circleimageview.CircleImageView>-->
+
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/folder"
+        android:layout_gravity="center">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Add Directory with name"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/Directory_Name"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_edit"
+        android:padding="8dp"
+        android:backgroundTint="#ffffff"
+        android:elevation="1dp"
+        android:hint="Directory Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/Add_Dir_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_edit"
+        android:text="Add"
+        android:padding="8dp"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

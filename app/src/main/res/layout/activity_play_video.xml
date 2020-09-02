@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".PlayVideo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <VideoView
+            android:layout_margin="10dp"
+            android:id="@+id/playVideo"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="250dp">
+
+        </VideoView>
+
+        <TextView
+            android:id="@+id/videonameplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="Video Name"
+            android:textSize="20dp"
+            android:background="@drawable/edit_text_border"
+            android:padding="10dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</ScrollView>

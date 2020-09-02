@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quizmania_admin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_icon3"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_icon3_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PlayVideo"></activity>
+        <activity android:name=".PdfView" />
+        <activity android:name=".Resume" />
+        <activity android:name=".VideoActivity" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".Admin_Login" />
+        <activity android:name=".FAQs" />
+        <activity android:name=".ReviewActivity" />
+        <activity android:name=".AdminAdd" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Add_boolean_question" />
+        <activity android:name=".LeaderBoard_Subject" />
+        <activity android:name=".Subject_Select_LeaderBoard" />
+        <activity android:name=".LeaderBoard" />
+        <activity android:name=".Dir_Display" />
+        <activity android:name=".Main_Page" />
+        <activity android:name=".AddQuestion" />
+        <activity android:name=".Questions" />
+        <activity android:name=".Chapters" />
+        <activity android:name=".Categories" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

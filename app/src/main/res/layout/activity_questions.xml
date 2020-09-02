@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7c7c7c"
+    android:orientation="vertical"
+    tools:context=".Questions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a boolean question"
+            android:textColor="#ffffff"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <Switch
+            android:id="@+id/boolean_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:layout_weight="1"
+            android:layout_gravity="right">
+
+        </Switch>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="#7c7c7c"
+        android:elevation="3dp">
+
+        <Button
+            android:id="@+id/single_add_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Add"
+            android:layout_weight="1"
+            android:background="@drawable/button_edit"
+            android:textColor="#ffffff"
+            android:backgroundTint="#10242E"
+            android:layout_margin="8dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/excel_add_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:text="Excel"
+            android:layout_weight="1"
+            android:background="@drawable/button_edit"
+            android:backgroundTint="#10242E"
+            android:padding="8dp"
+            android:layout_margin="8dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ques_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#7c7c7c"
+        android:layout_margin="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
